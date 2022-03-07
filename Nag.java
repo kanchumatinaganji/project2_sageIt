@@ -1,22 +1,22 @@
 package testsageit;
-class Ashraf
+class Nag
 {
-    public static void main (String[] args) 
-    { 
-        int [] a = {1,2,3,4}; 
-        System.out.println("Maximum contiguous sum is " + maxSubArraySum(a)); 
-    }  
-    static int maxSubArraySum(int a[]) 
-    { 
-        int size = a.length; 
-        int max_so_far = Integer.MIN_VALUE, max_ending_here = 0; 
-        for (int i = 0; i < size; i++) 
-        { 
-            max_ending_here = max_ending_here + a[i]; 
-            if (max_so_far < max_ending_here) 
-                max_so_far = max_ending_here; 
-            if (max_ending_here < 0) 
-                max_ending_here = 0; 
-        } 
-        return max_so_far; 
-    } 
+Â Â Â Â public static void main (String[] args) 
+Â Â Â Â { 
+Â Â Â Â Â Â Â Â int [] a = {1,2,3,4}; 
+Â Â Â Â Â Â Â Â System.out.println("Maximum contiguous sum is " +Â maxSubArraySum(a)); 
+Â Â Â Â } Â 
+Â Â Â Â static int maxSubArraySum(int a[]) 
+Â Â Â Â { 
+Â Â Â Â Â Â Â Â int size = a.length; 
+Â Â Â Â Â Â Â Â int max_so_far = Integer.MIN_VALUE, max_ending_here = 0; 
+Â Â Â Â Â Â Â Â for (int i = 0; i < size; i++) 
+Â Â Â Â Â Â Â Â { 
+Â Â Â Â Â Â Â Â Â Â Â Â max_ending_here = max_ending_here + a[i]; 
+Â Â Â Â Â Â Â Â Â Â Â Â if (max_so_far < max_ending_here) 
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â max_so_far = max_ending_here; 
+Â Â Â Â Â Â Â Â Â Â Â Â if (max_ending_here < 0) 
+Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â max_ending_here = 0; 
+Â Â Â Â Â Â Â Â } 
+Â Â Â Â Â Â Â Â return max_so_far; 
+Â Â Â Â } 
